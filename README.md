@@ -1,14 +1,16 @@
 # Stochastic Multi-Armed Bandit
 
 Implementation of:
- -1- Thompson Sampling
- -2- KL UCB
- -3- Bayes UCB
- -4- UCB 1
- -5- UCBV
- -6- MOSS
- -7- CPUCB
+<ul>
+ <li>-1- Thompson Sampling </li>
+ <li>-2- KL UCB </li>
+ <li>-3- Bayes UCB </li>
+ <li>-4- UCB 1 </li>
+ <li>-5- UCBV </li>
+ <li>-6- MOSS </li>
+ <li>-7- CPUCB </li>
+ <ul>
  
- For the stationary stochastic Multi-armed bandit
+ for the stationary stochastic Multi-armed bandit
  
- For a demo, please lauch the following script:
+ For a demo, please lauch the following script: demoStochasticMAB.m
