@@ -9,6 +9,7 @@ Implementation of 7 multi-amred bandit algorithmm for the stochastic Bernoulli e
  <li>UCBV (see http://certis.enpc.fr/~audibert/Mes%20articles/TCS08.pdf) </li>
  <li>MOSS (see https://www.di.ens.fr/willow/pdfscurrent/COLT09a.pdf) </li>
  <li>CPUCB (see http://proceedings.mlr.press/v19/garivier11a/garivier11a.pdf) </li>
+ <li>MDEM (see http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.232.3594) </li>
  <ul>
  
  For a demo, please lauch the following script: demoStochasticMAB.m
