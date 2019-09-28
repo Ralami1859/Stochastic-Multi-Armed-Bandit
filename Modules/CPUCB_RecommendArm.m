@@ -4,7 +4,5 @@ function [ArmToPlay]= CPUCB_RecommendArm(ExpectedMeans, NbrPlayArm, t, c)
     end
     [~, ic] = binofit(floor(ExpectedMeans.*NbrPlayArm), NbrPlayArm, 1/(t.^c));
     ucb = ic(:,2);
-    m = max(ucb); 
-    I = find(ucb == m);
-    ArmToPlay = I(1+floor(length(I)*rand));
+    ArmToPlay = PickingMaxIndexArm(ucb);
 end

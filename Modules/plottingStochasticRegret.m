@@ -1,10 +1,20 @@
-function plottingStochasticRegret(environment,ArmsPlayed,titre)
+function plottingStochasticRegret(environment,MatrixArmsPlayed,col, holding)
 
-regret = max(environment) - environment(ArmsPlayed);
+[NbrRuns, ~] = size(MatrixArmsPlayed);
 
-figure; plot(cumsum(regret),'r.');
+regret = [];
+
+for run = 1:NbrRuns;
+    regret = [regret; cumsum(max(environment)- environment(MatrixArmsPlayed(run,:)))];
+end
+if holding == 0
+   figure; 
+   grid on
+else
+    hold on
+end
+plot(mean(regret,1),'Color',col, 'LineWidth',2);
 xlabel('Time step')
 ylabel('Cumulative regret')
-title(titre)
 set(gca,'FontSize',14,'fontWeight',...
     'bold', 'fontName','caladea')

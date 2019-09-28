@@ -6,7 +6,5 @@ function [ArmToPlay]= UCB1_RecommendArm(ExpectedMeans, NbrPlayArm, t)
         error('Time step invalide. t<=0')
     end
     ucb = ExpectedMeans + sqrt(2*log(t)./NbrPlayArm);
-    m = max(ucb); 
-    I = find(ucb == m);
-    ArmToPlay = I(1+floor(length(I)*rand));
+    ArmToPlay = PickingMaxIndexArm(ucb);
 end

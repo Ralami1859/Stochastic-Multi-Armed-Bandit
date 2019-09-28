@@ -7,7 +7,5 @@ function [ArmToPlay]= KLUCB_RecommendArm(ExpectedMeans, NbrPlayArm, t, Horizon, 
         error('Time step invalide. t<=0')
     end
     ucb = SearchingKLUCBIndex(ExpectedMeans, NbrPlayArm, t, Horizon, HF,c);
-    m = max(ucb); 
-    I = find(ucb == m);
-    ArmToPlay = I(1+floor(length(I)*rand));
+    ArmToPlay = PickingMaxIndexArm(ucb);
 end

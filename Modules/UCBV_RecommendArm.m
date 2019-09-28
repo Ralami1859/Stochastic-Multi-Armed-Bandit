@@ -1,9 +1,9 @@
-function [ArmToPlay]= UCBV_RecommendArm(ExpectedMeans, ExpectedVariances, NbrPlayArm, t)
+function [ArmToPlay]= UCBV_RecommendArm(Success, Success2, NbrPlayArm, t)
     if( t <=0)
-        error('Time step invalid. t<=0')
+        error('Invalid Time step. t<=0')
     end
-    ucb = ExpectedMeans + sqrt(2*log(t).*ExpectedVariances./NbrPlayArm) + 3*log(t)./NbrPlayArm;
-    m = max(ucb);
-    I = find(ucb == m);
-    ArmToPlay = I(1+floor(length(I)*rand)); % Breaking randomly the tie
+    m =  Success./NbrPlayArm;
+    V = Success2./NbrPlayArm - m.^2;
+    ucb = m + sqrt(2*log(t).*V./NbrPlayArm) + 3*log(t)./NbrPlayArm;
+    ArmToPlay = PickingMaxIndexArm(ucb);
 end
