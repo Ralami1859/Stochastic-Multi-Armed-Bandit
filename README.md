@@ -1,6 +1,6 @@
 # Stochastic Multi-Armed Bandit
 
-Implementation of 7 multi-amred bandit algorithmm for the stochastic Bernoulli environment:
+Implementation of 8 multi-armed bandit algorithms for the stationary stochastic Bernoulli environment:
 <ul>
  <li>Thompson Sampling (see http://proceedings.mlr.press/v23/agrawal12/agrawal12.pdf) </li>
  <li>KL UCB (see http://proceedings.mlr.press/v19/garivier11a/garivier11a.pdf) </li>
