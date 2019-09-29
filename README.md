@@ -12,4 +12,4 @@ Implementation of 8 multi-armed bandit algorithms for the stationary stochastic 
  <li>MDEM (see http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.232.3594) </li>
  <ul>
  
- For a demo, please lauch the following script: demoStochasticMAB.m
+ For a demo, please launch the following script: demoStochasticMAB.m
