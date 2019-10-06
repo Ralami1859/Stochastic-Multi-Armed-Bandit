@@ -9,7 +9,7 @@ Implementation of 8 multi-armed bandit algorithms for the stationary stochastic 
  <li>UCBV (see http://certis.enpc.fr/~audibert/Mes%20articles/TCS08.pdf) </li>
  <li>MOSS (see https://www.di.ens.fr/willow/pdfscurrent/COLT09a.pdf) </li>
  <li>CPUCB (see http://proceedings.mlr.press/v19/garivier11a/garivier11a.pdf) </li>
- <li>MDEM (see http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.232.3594) </li>
+ <li>DMED (see http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.232.3594) </li>
  <ul>
  
  For a demo, please launch the following script: demoStochasticMAB.m
