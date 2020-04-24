@@ -2,7 +2,7 @@
 
 Implementation of 9 multi-armed bandit algorithms for the stationary stochastic Bernoulli environment:
 <ul>
- <li>Thompson Sampling (see http://proceedings.mlr.press/v23/agrawal12/agrawal12.pdf) </li>
+ <li>Thompson Sampling (see https://arxiv.org/pdf/1205.4217.pdf) </li>
  <li>KL UCB (see http://proceedings.mlr.press/v19/garivier11a/garivier11a.pdf) </li>
  <li>Bayes UCB (see http://proceedings.mlr.press/v22/kaufmann12/kaufmann12.pdf) </li>
  <li>UCB 1 (see https://homes.di.unimi.it/~cesabian/Pubblicazioni/ml-02.pdf) </li>
